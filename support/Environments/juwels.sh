@@ -14,6 +14,7 @@ spectre_load_modules() {
     module load GSL/2.8
     module load HDF5/1.14.5
     module load Python/3.12.3
+    export CHARM_ROOT=/p/project/bbh-et/markwell1/charm
 }
 
 spectre_unload_modules() {
@@ -29,7 +30,7 @@ spectre_unload_modules() {
     module unload Python/3.12.3
     }
 
-spectre_run_cmake_gcc() {
+spectre_run_cmake() {
     if [ -z ${SPECTRE_HOME} ]; then
         echo "You must set SPECTRE_HOME to the cloned SpECTRE directory"
         return 1
