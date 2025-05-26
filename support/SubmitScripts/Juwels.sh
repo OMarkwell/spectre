@@ -22,4 +22,3 @@ srun -n ${SLURM_NTASKS} \
   ++ppn ${CHARM_PPN} +setcpuaffinity \
   ${SPECTRE_CHECKPOINT:+ +restart "${SPECTRE_CHECKPOINT}"}
 {% endblock %}
-`
