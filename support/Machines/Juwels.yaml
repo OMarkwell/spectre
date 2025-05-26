@@ -1,0 +1,14 @@
+# Distributed under the MIT License.
+# See LICENSE.txt for details.
+
+Machine:
+  Name: Juwels
+  Description: |
+    Supercomputer at Jülich
+    More information:
+    https://apps.fz-juelich.de/jsc/hps/juwels/batchsystem.html
+  DefaultTasksPerNode: 1
+  DefaultProcsPerTask: 48
+  DefaultQueue: "batch"
+  DefaultTimeLimit: "1-00:00:00"
+  LaunchCommandSingleNode: ["srun", "-n", "1"]
